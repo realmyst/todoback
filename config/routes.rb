@@ -1,9 +1,13 @@
 Todoback::Application.routes.draw do
+  root :to => "web/todos#index"
+
   scope :module => :web do
-    root :to => "lists#index"
     resources :lists do
       resources :items do
       end
+    end
+    resources :todos do
+      put :complete, :on => :member
     end
   end
   # The priority is based upon order of creation:

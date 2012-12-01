@@ -1,0 +1,10 @@
+.container
+  %h1 TODO:
+  #new_todo
+  #todos
+
+:javascript
+  $(function() {
+    window.router = new Todoback.Routers.TodosRouter({todos: #{@todos.to_json.html_safe} });
+    Backbone.history.start();
+  });

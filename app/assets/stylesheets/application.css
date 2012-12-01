@@ -11,3 +11,29 @@
  *= require_self
  *= require_tree .
  */
+
+#todos, #new_todo {
+  max-width: 300px;
+  margin: auto;
+}
+/*#new_todo input {*/
+  /*width: 100%;*/
+/*}*/
+
+#todos a {
+  text-decoration: none;
+}
+
+.icon-ok {
+  cursor: pointer;
+}
+.button.completed {
+  color: #00FF00;
+}
+.button.active {
+  color: gray;
+}
+
+.title.completed {
+  text-decoration: line-through;
+}

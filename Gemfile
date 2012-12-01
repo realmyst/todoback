@@ -7,6 +7,14 @@ gem 'rails', '3.2.9'
 
 gem 'pg'
 gem 'rails-backbone'
+gem 'state_machine'
+gem 'unicorn-rails'
+gem 'thin'
+gem 'jbuilder'
+gem 'haml-rails'
+gem 'js-routes'
+gem "less-rails"
+gem 'twitter-bootstrap-rails'
 
 
 # Gems used only for assets and not required
@@ -16,7 +24,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
